@@ -1,0 +1,11 @@
+INFO 2023-09-29 20:27:08,020 autoreload 6936 5276 Watching for file changes with StatReloader
+INFO 2023-09-29 20:27:37,434 autoreload 6936 5276 C:\Users\Professional\Desktop\geekbrains\Django\homeworks\hw1_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-29 20:27:38,188 autoreload 10856 10076 Watching for file changes with StatReloader
+INFO 2023-09-29 20:27:57,481 autoreload 10856 10076 C:\Users\Professional\Desktop\geekbrains\Django\homeworks\hw1_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-29 20:27:58,233 autoreload 15040 14264 Watching for file changes with StatReloader
+INFO 2023-09-29 20:28:15,255 autoreload 15040 14264 C:\Users\Professional\Desktop\geekbrains\Django\homeworks\hw1_project\hw1_app\views.py changed, reloading.
+INFO 2023-09-29 20:28:15,884 autoreload 960 10680 Watching for file changes with StatReloader
+INFO 2023-09-29 20:28:43,037 basehttp 960 2104 "GET / HTTP/1.1" 200 681
+INFO 2023-09-29 20:28:44,475 basehttp 960 2104 "GET /about/ HTTP/1.1" 200 766
+INFO 2023-09-29 20:28:45,831 basehttp 960 2104 "GET / HTTP/1.1" 200 681
+INFO 2023-09-29 20:28:46,867 basehttp 960 2104 "GET /about/ HTTP/1.1" 200 766
