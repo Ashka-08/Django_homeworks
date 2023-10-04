@@ -9,3 +9,16 @@ INFO 2023-09-29 20:28:43,037 basehttp 960 2104 "GET / HTTP/1.1" 200 681
 INFO 2023-09-29 20:28:44,475 basehttp 960 2104 "GET /about/ HTTP/1.1" 200 766
 INFO 2023-09-29 20:28:45,831 basehttp 960 2104 "GET / HTTP/1.1" 200 681
 INFO 2023-09-29 20:28:46,867 basehttp 960 2104 "GET /about/ HTTP/1.1" 200 766
+INFO 2023-10-04 13:13:46,376 views 13092 4824 Index page accessed
+INFO 2023-10-04 13:13:51,586 views 13092 4824 <WSGIRequest: GET '/hw2/users/'> request received
+INFO 2023-10-04 13:17:01,759 views 11124 4340 Index page accessed
+INFO 2023-10-04 13:17:03,057 views 11124 4340 <WSGIRequest: GET '/hw2/users/'> request received
+INFO 2023-10-04 16:18:04,622 views 12468 11684 Index page accessed
+INFO 2023-10-04 16:18:06,915 views 12468 11684 <WSGIRequest: GET '/hw2/users/'> request received
+INFO 2023-10-04 17:03:43,176 views 12152 7460 <WSGIRequest: GET '/hw2/users/'> request received
+INFO 2023-10-04 17:03:50,777 views 12152 7460 <WSGIRequest: GET '/hw2/orders/'> request received
+INFO 2023-10-04 17:03:56,020 views 12152 7460 <WSGIRequest: GET '/hw2/products/'> request received
+INFO 2023-10-04 17:04:01,088 views 12152 7460 <WSGIRequest: GET '/hw2/orders/'> request received
+INFO 2023-10-04 17:12:31,042 views 9292 10140 Index page accessed
+INFO 2023-10-04 17:12:33,095 views 9292 10140 <WSGIRequest: GET '/hw2/orders/'> request received
+INFO 2023-10-04 17:12:41,139 views 9292 10140 <WSGIRequest: GET '/hw2/products/'> request received

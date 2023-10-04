@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hw1_app',
+    'hw2_app',
 ]
 
 MIDDLEWARE = [
@@ -147,17 +148,17 @@ LOGGING = {
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'file'],
+            'handlers': ['console'],
             'level': 'INFO',
         },
-        'myapp': {
-            'handlers': ['console'],
-            'level': 'DEBUG',
+        'hw2_app': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
             'propagate': True,
         },
-        'ex5app': {
+        'hw1_app': {
             'handlers': ['console', 'file'],
-            'level': 'INFO',
+            'level': 'DEBUG',
             'propagate': True,
         },
     },
