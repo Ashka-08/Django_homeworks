@@ -76,4 +76,68 @@ img {
     padding-left: 20px;
     padding-right: 20px;
 }
-  
+
+.form-control {
+    display:block;
+    width:100%;
+    padding:1rem 1rem;
+    font-family:"General Sans",sans-serif,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.25;
+    color:#6b7280;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid #d1d5db;
+    appearance:none;
+    border-radius:8px;
+    transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}@media(prefers-reduced-motion: reduce){
+    .form-control{
+        transition:none
+    }
+}
+.form-control[type=file]{
+    overflow:hidden
+}.form-control[type=file]:not(:disabled):not([readonly]){
+    cursor:pointer
+}
+.form-control:focus{
+    color:#6b7280;
+    background-color:#fff;
+    border-color:#a7a3f2;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(79,70,229,.25)
+}
+.form-control::-webkit-date-and-time-value{
+    height:1.25em
+}
+.form-control::placeholder{
+    color:#6b7280;opacity:1
+}
+.form-control:disabled{
+    background-color:#e5e7eb;
+    opacity:1
+}
+.form-control::file-selector-button{
+    padding:1rem 1rem;
+    margin:-1rem -1rem;
+    margin-inline-end:1rem;
+    color:#6b7280;
+    background-color:#e5e7eb;
+    pointer-events:none;
+    border-color:inherit;
+    border-style:solid;
+    border-width:0;
+    border-inline-end-width:1px;
+    border-radius:0;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+@media(prefers-reduced-motion: reduce){
+    .form-control::file-selector-button{
+        transition:none
+    }
+}
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button{
+    background-color:#dadbdf
+}

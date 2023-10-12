@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'hw1_app',
     'hw2_app',
     'hw3_app',
+    'hw4_app',
 ]
 
 MIDDLEWARE = [
@@ -174,5 +175,14 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
+        'hw3_app': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
     },
 }
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'

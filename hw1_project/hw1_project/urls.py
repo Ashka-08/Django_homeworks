@@ -6,4 +6,5 @@ urlpatterns = [
     path('hw1/', include('hw1_app.urls')),
     path('hw2/', include('hw2_app.urls')),
     path('hw3/', include('hw3_app.urls')),
+    path('hw4/', include('hw4_app.urls')),
 ]
