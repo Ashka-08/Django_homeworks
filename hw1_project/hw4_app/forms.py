@@ -23,25 +23,34 @@ class FormProductAdd(forms.Form):
 
 
 class FormProductsUpdate(forms.Form):
-    pk = forms.ModelChoiceField(
-        label='Товар', 
-        empty_label='Выберите товар',
-        queryset=Product.objects.all(),
-        widget=forms.Select(attrs={'class': 'form-control'}))
-    name = forms.CharField(max_length=50,
-            widget=forms.TextInput(attrs={
+    product = forms.ModelChoiceField(
+        label='Товар',
+        queryset=Product.objects.all(), 
+        empty_label='Выберите товар')
+    name = forms.CharField(
+        max_length=50, 
+        label='Название', 
+        widget=forms.TextInput(attrs={
             'class': 'form-control', 
-            'placeholder': 'Название товара'}))
+            'placeholder': 'Название товара'})
+    )
     description = forms.CharField(
+        label='Описание', 
         widget=forms.Textarea(attrs={
             'class': 'form-control', 
             'placeholder': 'Описание'}))
-    price = forms.FloatField(min_value=0.0,
+    price = forms.FloatField(
+        min_value=0.0, 
+        label='Цена', 
         widget=forms.NumberInput(attrs={
             'class': 'form-control', 
             'placeholder': 'Цена'}))
-    prod_quant = forms.IntegerField(min_value=0,
+    prod_quant = forms.IntegerField(
+        min_value=0, 
+        label='Количество', 
         widget=forms.NumberInput(attrs={
             'class': 'form-control', 
             'placeholder': 'Количество'}))
-    img = forms.ImageField()
+    img = forms.ImageField(
+        label='Изображение',
+        required=False)

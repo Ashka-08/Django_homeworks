@@ -175,7 +175,7 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
-        'hw3_app': {
+        'hw4_app': {
             'handlers': ['console'],
             'level': 'INFO',
             'propagate': True,

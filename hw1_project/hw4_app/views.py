@@ -1,6 +1,4 @@
-from datetime import datetime, timedelta
-from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
 from django.template.response import TemplateResponse
 from django.core.files.storage import FileSystemStorage
 import logging
@@ -51,15 +49,16 @@ def products_update(request):
     if request.method == 'POST':
         form = FormProductsUpdate(request.POST, request.FILES)
         if form.is_valid():
-            pk = form.cleaned_data['product']
-            product = Product.objects.filter(pk=pk).first()
+            pk = form.cleaned_data['product'].pk
             name = form.cleaned_data['name']
             description = form.cleaned_data['description']
             price = form.cleaned_data['price']
             prod_quant = form.cleaned_data['prod_quant']
             img = form.cleaned_data['img']
-            fs = FileSystemStorage()
-            fs.save(img.name, img)
+            if img:
+                fs = FileSystemStorage()
+                fs.save(img.name, img)
+            product = Product.objects.filter(pk=pk).first()
             product.name=name
             product.description=description
             product.price=price
@@ -69,6 +68,6 @@ def products_update(request):
             context['answer'] = f'Товар изменен: {product}'
             return TemplateResponse(request, 'hw4_app/form_product.html', context)
     else:
-        form = FormProductAdd()
+        form = FormProductsUpdate()
         context['form'] = form
     return TemplateResponse(request, 'hw4_app/form_product.html', context)
