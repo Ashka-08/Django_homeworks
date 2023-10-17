@@ -8,7 +8,7 @@ class User(models.Model):
     reg_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'UserID:{self.pk} {self.name}, email: {self.email}, phone: {self.phone}'
+        return f'UserID:{self.pk} {self.name}'
 
 
 class Product(models.Model):

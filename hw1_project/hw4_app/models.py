@@ -11,3 +11,4 @@ class Product(models.Model):
 
     def __str__(self):
         return f'ProductID: {self.pk} {self.name}, price: {self.price}'
+    
