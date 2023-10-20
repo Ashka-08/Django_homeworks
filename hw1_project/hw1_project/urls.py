@@ -8,4 +8,5 @@ urlpatterns = [
     path('hw3/', include('hw3_app.urls')),
     path('hw4/', include('hw4_app.urls')),
     path('hw5/', include('hw5_app.urls')),
+    path('', include('hw6_app.urls')),
 ]
